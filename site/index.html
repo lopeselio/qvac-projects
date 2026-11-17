@@ -8,34 +8,116 @@
 <meta name="description" content="Five open-source projects built on Tether QVAC: local, private AI on your own devices, with peer-to-peer sharing over Holepunch.">
 <meta property="og:title" content="QVAC projects by lopeselio">
 <meta property="og:description" content="Five open-source projects built on Tether QVAC: local, private AI on your own devices, with peer-to-peer sharing over Holepunch.">
+<meta property="og:image" content="https://qvac.lopeselio.online/media/qvac-ui-demo.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Cpath d='M8 16a8 8 0 1 1 16 0 8 8 0 0 1-16 0z' fill='none' stroke='%23fff' stroke-width='2.4'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap"><nav><span><b>lopeselio</b> · QVAC projects</span><div class="links"><a href="https://github.com/lopeselio">GitHub</a><a href="https://docs.qvac.tether.io/">Tether QVAC</a></div></nav>
+<div class="wrap"><nav><span><b>lopeselio</b> · QVAC projects</span><div class="links"><a href="#watch">Watch</a><a href="#p2p">P2P &amp; private AI</a><a href="https://github.com/lopeselio">GitHub</a></div></nav>
 <header class="hero">
   <span class="badge">● Open source · Apache-2.0</span>
   <h1>Local AI, on your own devices</h1>
   <p class="lead">Five projects built on <a href="https://docs.qvac.tether.io/">Tether QVAC</a>: models that run on your laptop or phone, private by default, shared peer-to-peer over Holepunch's Hyperswarm instead of a server.</p>
 </header>
-<section class="projects">
-  <div class="grid">
-    <div class="card"><span class="tag" style="color:#0f766e;background:color-mix(in srgb,#0f766e 14%,transparent)">Runs in the browser</span><h3><span class="dot" style="background:#0f766e"></span> Wallet Guardian</h3><p>Explains EVM transactions and signatures before you sign: rules-first scam detection, a guarded local QVAC LLM explanation, and a guard for Tether WDK accounts.</p><div class="row"><a href="https://wallet-guardian.qvac.lopeselio.online">Try it in your browser →</a><a href="https://github.com/lopeselio/qvac-wallet-guardian">GitHub</a></div></div>
-    <div class="card"><span class="tag" style="color:#0e7490;background:color-mix(in srgb,#0e7490 14%,transparent)">Runs in the browser</span><h3><span class="dot" style="background:#0e7490"></span> CI Doctor</h3><p>Finds why CI failed: the first real error, real failure or flaky, and the exact log lines. A local QVAC model explains it, and is only shown if its answer passes checks.</p><div class="row"><a href="https://ci-doctor.qvac.lopeselio.online">Try it in your browser →</a><a href="https://github.com/lopeselio/qvac-ci-doctor">GitHub</a></div></div>
-    <div class="card"><span class="tag" style="color:#0d9488;background:color-mix(in srgb,#0d9488 14%,transparent)">Runs on your device</span><h3><span class="dot" style="background:#0d9488"></span> Pocket Tune</h3><p>Teach a small model your voice from notes, chats or spoken answers: scrubbed, fine-tuned on your own computer or phone, compared, and shared peer-to-peer.</p><div class="row"><a href="https://pocket-tune.qvac.lopeselio.online">Project page →</a><a href="https://github.com/lopeselio/qvac-pocket-tune">GitHub</a></div></div>
-    <div class="card"><span class="tag" style="color:#4f46e5;background:color-mix(in srgb,#4f46e5 14%,transparent)">Runs on your device</span><h3><span class="dot" style="background:#4f46e5"></span> Babel Room</h3><p>Live captions across languages with no server: Whisper and Bergamot on each device, rooms over Hyperswarm, on phones, laptops and terminals.</p><div class="row"><a href="https://babel-room.qvac.lopeselio.online">Project page →</a><a href="https://github.com/lopeselio/qvac-babel-room">GitHub</a></div></div>
-    <div class="card"><span class="tag" style="color:#d97706;background:color-mix(in srgb,#d97706 14%,transparent)">Runs on your device</span><h3><span class="dot" style="background:#d97706"></span> qvac-seed</h3><p>Share local AI models and LoRA adapters as pear:// links the QVAC SDK loads directly: seeded over Hyperswarm, verified by SHA-256.</p><div class="row"><a href="https://seed.qvac.lopeselio.online">Project page →</a><a href="https://github.com/lopeselio/qvac-seed">GitHub</a></div></div>
+
+<section id="watch">
+  <div class="sechead"><h2>Watch them run</h2><span class="muted">1:51 · recorded live on one Mac</span></div>
+  <figure class="film">
+    <video controls preload="none" playsinline poster="media/qvac-ui-demo.jpg" src="media/qvac-ui-demo.mp4"></video>
+  </figure>
+  <div class="chapters">
+    <button data-t="5">qvac-seed <span>0:05</span></button>
+    <button data-t="26">Pocket Tune <span>0:26</span></button>
+    <button data-t="84">Babel Room <span>1:24</span></button>
   </div>
 </section>
+
+<section class="projects">
+  <div class="sechead"><h2>The projects</h2><span class="muted">A sneak peek of each</span></div>
+  <div class="grid">
+    <article class="card">
+      <div class="peek"><video class="loop" muted loop playsinline preload="none" poster="media/peek-seed.jpg" src="media/peek-seed.mp4" aria-label="qvac-seed publishing a model and a friend fetching it"></video></div>
+      <span class="tag" style="color:#d97706;background:color-mix(in srgb,#d97706 14%,transparent)">Peer-to-peer · runs on your device</span>
+      <h3><span class="dot" style="background:#d97706"></span> qvac-seed</h3>
+      <p>Share local AI models and LoRA adapters as pear:// links the QVAC SDK loads directly: seeded over Hyperswarm, verified by SHA-256.</p>
+      <p class="stays"><b>Stays private:</b> no upload server. Every file is checked against its SHA-256 as it streams, so a bad download never lands on disk.</p>
+      <div class="row"><a href="https://seed.qvac.lopeselio.online">Project page →</a><a href="https://github.com/lopeselio/qvac-seed">GitHub</a></div>
+    </article>
+    <article class="card">
+      <div class="peek"><video class="loop" muted loop playsinline preload="none" poster="media/peek-pocket-tune.jpg" src="media/peek-pocket-tune.mp4" aria-label="Pocket Tune building a dataset and fine-tuning on device"></video></div>
+      <span class="tag" style="color:#0d9488;background:color-mix(in srgb,#0d9488 14%,transparent)">Peer-to-peer · runs on your device</span>
+      <h3><span class="dot" style="background:#0d9488"></span> Pocket Tune</h3>
+      <p>Teach a small model your voice from notes, chats or spoken answers: scrubbed, fine-tuned on your own computer or phone, compared, and shared peer-to-peer.</p>
+      <p class="stays"><b>Stays private:</b> your notes and training data never leave your machine. Only the adapter is shared, as a pear:// link.</p>
+      <div class="row"><a href="https://pocket-tune.qvac.lopeselio.online">Project page →</a><a href="https://github.com/lopeselio/qvac-pocket-tune">GitHub</a></div>
+    </article>
+    <article class="card">
+      <div class="peek"><video class="loop" muted loop playsinline preload="none" poster="media/peek-babel-room.jpg" src="media/peek-babel-room.mp4" aria-label="Babel Room translating between two people in one room"></video></div>
+      <span class="tag" style="color:#4f46e5;background:color-mix(in srgb,#4f46e5 14%,transparent)">Peer-to-peer · runs on your device</span>
+      <h3><span class="dot" style="background:#4f46e5"></span> Babel Room</h3>
+      <p>Live captions across languages with no server: Whisper and Bergamot on each device, rooms over Hyperswarm, on phones, laptops and terminals.</p>
+      <p class="stays"><b>Stays private:</b> speech becomes text on your device and audio never leaves it. The room code is hashed into a topic, so it never touches the DHT.</p>
+      <div class="row"><a href="https://babel-room.qvac.lopeselio.online">Project page →</a><a href="https://github.com/lopeselio/qvac-babel-room">GitHub</a></div>
+    </article>
+    <article class="card">
+      <div class="peek"><img src="media/peek-wallet-guardian.jpg" alt="Wallet Guardian checking a USDT transaction" loading="lazy"></div>
+      <span class="tag" style="color:#0f766e;background:color-mix(in srgb,#0f766e 14%,transparent)">Runs in the browser</span>
+      <h3><span class="dot" style="background:#0f766e"></span> Wallet Guardian</h3>
+      <p>Explains EVM transactions and signatures before you sign: rules-first scam detection, a guarded local QVAC LLM explanation, and a guard for Tether WDK accounts.</p>
+      <p class="stays"><b>Stays private:</b> rules decide the verdict on your device. No transaction data leaves your machine.</p>
+      <div class="row"><a href="https://wallet-guardian.qvac.lopeselio.online">Try it in your browser →</a><a href="https://github.com/lopeselio/qvac-wallet-guardian">GitHub</a></div>
+    </article>
+    <article class="card">
+      <div class="peek"><img src="media/peek-ci-doctor.jpg" alt="CI Doctor ready to diagnose a pasted CI log" loading="lazy"></div>
+      <span class="tag" style="color:#0e7490;background:color-mix(in srgb,#0e7490 14%,transparent)">Runs in the browser</span>
+      <h3><span class="dot" style="background:#0e7490"></span> CI Doctor</h3>
+      <p>Finds why CI failed: the first real error, real failure or flaky, and the exact log lines. A local QVAC model explains it, and is only shown if its answer passes checks.</p>
+      <p class="stays"><b>Stays private:</b> logs stay in your browser. Nothing is uploaded to diagnose them.</p>
+      <div class="row"><a href="https://ci-doctor.qvac.lopeselio.online">Try it in your browser →</a><a href="https://github.com/lopeselio/qvac-ci-doctor">GitHub</a></div>
+    </article>
+  </div>
+</section>
+
+<section id="p2p">
+  <div class="sechead"><h2>Peer-to-peer and private AI</h2><span class="muted">2:58 · the Holepunch stack, layer by layer</span></div>
+  <p class="lead small">Most AI apps send your words, voice and files to someone else's server. These don't. The model runs on your device with QVAC, and when something has to travel, it goes straight to the other person over Holepunch.</p>
+  <figure class="film">
+    <video controls preload="none" playsinline poster="media/holepunch-explainer.jpg" src="media/holepunch-explainer.mp4"></video>
+  </figure>
+  <div class="pillars">
+    <div class="pillar"><h3>Private by default</h3><p>Speech recognition, translation, fine-tuning and explanations run with QVAC on your own laptop or phone. Your data isn't sent anywhere to be processed.</p></div>
+    <div class="pillar"><h3>Peers, not servers</h3><p>Peers find each other on Hyperswarm by a shared topic. HyperDHT punches through home routers, and every connection is end-to-end encrypted.</p></div>
+    <div class="pillar"><h3>Verified, not trusted</h3><p>Hypercore proves who wrote the bytes; a SHA-256 manifest proves they're the bytes you meant to share. Every peer is treated as a stranger: size-capped, validated and rate-limited.</p></div>
+  </div>
+  <h3 class="sub">The stack</h3>
+  <ul class="stack">
+    <li><b>UDX</b> reliable, ordered streams over UDP</li>
+    <li><b>HyperDHT</b> finds peers and punches through NATs</li>
+    <li><b>Hyperswarm</b> joins a topic, opens encrypted connections</li>
+    <li><b>Hypercore</b> a signed, append-only log</li>
+    <li><b>Corestore · Hyperdrive</b> many logs, and a P2P file system on top</li>
+    <li><b>Bare</b> a small JavaScript runtime, so the same code runs on phones</li>
+  </ul>
+</section>
+
 <section>
   <h2>Common threads</h2>
   <ul class="facts">
-    <li><b>On-device by default.</b> Speech recognition, translation, fine-tuning and explanations run with QVAC on your own hardware.</li>
     <li><b>Rules first, models checked.</b> Wallet Guardian and CI Doctor decide with rules; the local model only explains, and only when its answer passes checks.</li>
-    <li><b>Peer-to-peer.</b> Babel Room rooms and qvac-seed sharing go over Hyperswarm: encrypted, hole-punched, no server.</li>
-    <li><b>Phones too.</b> Pocket Tune and Babel Room have Expo apps tested on an iPhone 13 Pro Max.</li>
+    <li><b>Tested on the real network.</b> HyperDHT's testnet runs discovery, hole punching and replication locally; Pocket Tune and Babel Room were also tested between peers on the public network.</li>
+    <li><b>Phones too.</b> Pocket Tune and Babel Room have Expo apps tested on an iPhone 13 Pro Max. On the phone, Babel Room's room runs in a Bare worklet.</li>
   </ul>
 </section>
-<footer><span>By <a href="https://github.com/lopeselio">lopeselio</a>.</span><span>Built on <a href="https://docs.qvac.tether.io/">Tether QVAC</a> and <a href="https://github.com/holepunchto">Holepunch</a>.</span></footer></div>
+<footer><span>By <a href="https://github.com/lopeselio">Elio Jordan Lopes</a> · <a href="https://x.com/ElioCodes">@ElioCodes</a></span><span>Built on <a href="https://docs.qvac.tether.io/">Tether QVAC</a> and <a href="https://github.com/holepunchto">Holepunch</a>.</span></footer></div>
+<script>
+  // Preview loops play only while on screen.
+  const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause()), { threshold: 0.4 });
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelectorAll('video.loop').forEach(v => io.observe(v));
+  // Chapter buttons jump the demo video.
+  document.querySelectorAll('.chapters button').forEach(b => b.addEventListener('click', () => {
+    const v = document.querySelector('#watch video'); v.currentTime = +b.dataset.t; v.play().catch(() => {});
+  }));
+</script>
 </body>
 </html>

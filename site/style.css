@@ -35,3 +35,25 @@ ul.facts { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
 .projects .card a { text-decoration: none; }
 .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 footer { padding: 30px 0 50px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.muted { color: var(--muted); font-size: 14px; }
+.sechead { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.sechead h2 { margin: 0; }
+.lead.small { font-size: 17px; margin: 0 0 18px; }
+.film { margin: 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); background: #000; }
+.film video { display: block; width: 100%; aspect-ratio: 16 / 9; }
+.chapters { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.chapters button { font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+.chapters button span { color: var(--muted); font-weight: 500; margin-left: 4px; }
+.chapters button:hover { border-color: var(--accent); }
+.peek { margin: -20px -20px 4px; border-bottom: 1px solid var(--line); background: var(--panel-2); border-radius: 16px 16px 0 0; overflow: hidden; }
+.peek video, .peek img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; }
+.projects .card .stays { font-size: 14px; color: var(--ink); background: var(--panel-2); border-radius: 10px; padding: 8px 12px; }
+.pillars { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 20px; }
+.pillar { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
+.pillar h3 { margin: 0 0 6px; font-size: 17px; }
+.pillar p { margin: 0; color: var(--muted); font-size: 15px; }
+h3.sub { margin: 26px 0 10px; font-size: 17px; }
+ul.stack { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+ul.stack li { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 8px 14px; font-size: 15px; color: var(--muted); }
+ul.stack li b { color: var(--ink); margin-right: 8px; }
+@media (max-width: 520px) { nav .links { gap: 12px; } nav .links a[href="#watch"] { display: none; } }
